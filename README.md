@@ -1,0 +1,356 @@
+# 🚀 Ticket Triage Agent
+
+An AI-powered Support Ticket Classification and Prioritization System built using Python, Flask, React, SQLite, and LLM-based reasoning.
+
+---
+
+## 👥 Team Information
+
+| Field | Details |
+|---|---|
+| **Team Name** | Team 31 |
+| **Team Number** | 31 |
+
+### Team Members
+
+- **YASVANTH P** — [Resume / GitHub](https://github.com/23AD159/ticket_triage_agent)
+- **YAMUNA SHRI T** — Resume
+- **VOMKAR BS** — Resume
+
+### Demo Video
+🎥 **Demo Link:** [https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32](https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32)
+
+### GitHub Repository
+🔗https://github.com/23AD159/ticket_triage_agent
+
+---
+
+## 📌 Project Overview
+
+**Ticket Triage Agent** is an AI-powered support ticket automation system that helps organizations automatically classify and prioritize customer support tickets.
+
+The system reduces manual effort by using LLM reasoning and prompt engineering to analyze support tickets and generate intelligent classifications.
+
+The application performs:
+
+- ✅ Support Ticket Classification
+- ✅ Priority Prediction
+- ✅ AI-Based Reasoning
+- ✅ JSON Ticket Processing
+- ✅ CSV Report Generation
+- ✅ SQLite Database Storage
+- ✅ Automated Ticket Analysis
+
+---
+
+## ✨ Features
+
+### 🔐 User-Friendly Interface
+- Modern React Frontend
+- JSON File Upload Support
+- Real-Time Classification Results
+
+### 📂 Ticket Upload
+- Upload Support Ticket JSON Files
+- Preview Uploaded Ticket Information
+- Automatic Processing
+
+### 🤖 AI-Powered Ticket Classification
+The system automatically classifies tickets into:
+- Bug
+- Feature Request
+- Billing
+- Other
+
+### 🚨 Priority Prediction
+The system assigns priorities such as:
+- **P1** – Critical
+- **P2** – High
+- **P3** – Medium
+- **P4** – Low
+
+### 🧠 LLM-Based Reasoning
+The AI model performs reasoning to:
+- Understand issue context
+- Analyze business impact
+- Determine urgency
+- Generate classification explanations
+
+### 📜 Structured Output Generation
+The application generates structured JSON outputs for reliable automation and storage.
+
+### 💾 Data Storage
+Stores:
+- Ticket Information
+- Classification Results
+- Priority Details
+- AI Reasoning Outputs
+
+Using:
+- CSV Files
+- SQLite Database
+
+---
+
+## 🛠 Technology Stack
+
+| Category | Technology |
+|---|---|
+| Frontend | React + Vite |
+| Backend | Flask |
+| Database | SQLite |
+| AI Model | LLM API |
+| Programming Language | Python |
+| Styling | CSS |
+| API Communication | Axios |
+| Version Control | GitHub |
+
+---
+
+## 📁 Project Structure
+
+```
+Ticket-Triage-Agent/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── app.py
+│   ├── output/
+│   ├── database/
+│   └── requirements.txt
+│
+├── tickets/
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🏗 Architecture Diagram
+
+```
+Frontend (React)
+       ↓
+Flask Backend API
+       ↓
+LLM Processing Engine
+       ↓
+Classification & Reasoning
+       ↓
+CSV + SQLite Storage
+       ↓
+Results Displayed to User
+```
+
+---
+
+## 🔄 System Workflow
+
+1. User uploads a support ticket JSON file.
+2. Frontend sends ticket data to Flask backend.
+3. Backend extracts ticket details.
+4. LLM processes the ticket using prompt engineering.
+5. AI analyzes issue category and urgency.
+6. Structured classification output is generated.
+7. Results are stored in CSV and SQLite.
+8. Classification results are displayed to the user.
+
+---
+
+## 🚀 Setup Instructions
+
+### Clone Repository
+```bash
+git clone (https://github.com/23AD159/ticket_triage_agent.git)
+```
+
+### Navigate to Project Folder
+```bash
+cd Ticket-Triage-Agent
+```
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend Setup
+```bash
+cd backend
+python -m venv venv
+```
+
+### Activate Virtual Environment
+
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**macOS / Linux:**
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+```bash
+pip install flask flask-cors openai python-dotenv pandas
+```
+
+### Run Backend
+```bash
+python app.py
+```
+
+### Access the Application
+
+| Service | URL |
+|---|---|
+| Frontend | http://localhost:5173 |
+| Backend | http://127.0.0.1:5000 |
+
+---
+
+## 📋 Ticket Categories Supported
+
+| Category | Description |
+|---|---|
+| Bug | Software errors or unexpected behavior |
+| Feature | New feature or enhancement requests |
+| Billing | Payment, refund, or subscription issues |
+| Other | General inquiries or miscellaneous issues |
+
+---
+
+## 📋 Priority Levels Supported
+
+| Priority | Level | Description |
+|---|---|---|
+| P1 | Critical | System down, data loss |
+| P2 | High | Major feature broken |
+| P3 | Medium | Minor issue, workaround exists |
+| P4 | Low | Cosmetic or documentation issues |
+
+---
+
+## 🧪 Sample Input Ticket
+
+```json
+{
+  "ticket_id": "T101",
+  "title": "Refund not received",
+  "description": "Money deducted but refund still pending."
+}
+```
+
+## 🧪 Expected Output
+
+```json
+{
+  "category": "Billing",
+  "priority": "P1",
+  "reason": "Financial issue affecting customer payment."
+}
+```
+
+---
+
+## 🧠 AI Concepts Used
+
+- LLM Reasoning
+- Prompt Engineering
+- Few-Shot Prompting
+- Structured JSON Output
+- AI-Based Classification
+- Agentic AI Workflow
+
+---
+
+## ⚠ Limitations
+
+- Supports JSON ticket files only
+- Uses SQLite for local storage
+- Requires internet connection for AI API
+- Classification depends on prompt quality
+
+---
+
+## 🔮 Future Enhancements
+
+- Real-Time Ticket Monitoring
+- Dashboard Analytics
+- Multi-Agent Architecture
+- Sentiment Analysis
+- Email Integration
+- Automatic Ticket Routing
+- Cloud Deployment
+- Admin Dashboard
+
+---
+
+## 🤖 AI Usage Note
+
+### AI Tools Used
+- ChatGPT
+- Claude AI
+- GitHub Copilot
+
+### What AI Helped With
+- Frontend Development
+- Backend API Development
+- Prompt Engineering
+- SQLite Integration
+- JSON Processing
+- Debugging
+- UI Improvements
+- Documentation
+
+### What AI Got Wrong
+- Initial UI Alignment Issues
+- JSON Parsing Errors
+- API Response Formatting Issues
+- Frontend Integration Bugs
+
+### Human Corrections
+- Improved User Interface
+- Fixed API Integration
+- Refined Prompt Structure
+- Added Better Error Handling
+- Improved Result Display
+
+---
+
+## 🎥 Project Demonstration Video
+
+🎬 **Demo Link:** [https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32](https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32)
+
+The demonstration video includes:
+- Project Overview
+- Frontend Demonstration
+- JSON Upload
+- AI Classification
+- Priority Prediction
+- CSV Output
+- SQLite Database
+- Architecture Explanation
+
+---
+
+## ✅ Project Outcome
+
+Ticket Triage Agent successfully automates support ticket classification and prioritization using AI-powered reasoning, helping organizations reduce manual effort and improve support efficiency.
+
+---
+
+## 👨‍💻 Developed By
+
+**Team Number – 31**
+
+**Project: Ticket Triage Agent**
