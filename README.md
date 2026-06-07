@@ -13,9 +13,9 @@ An AI-powered Support Ticket Classification and Prioritization System built usin
 
 ### Team Members
 
-- **YASVANTH P** — [Resume / GitHub](https://github.com/23AD159/ticket_triage_agent)
-- **YAMUNA SHRI T** — Resume
-- **VOMKAR BS** — Resume
+- **YAMUNA SHRI T** 
+- **YASVANTH P**
+- **VOMKAR BS**
 
 ### Demo Video
 🎥 **Demo Link:** [https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32](https://www.loom.com/share/99d3ccdc5a5a46beabf18580d7b8dc32)
